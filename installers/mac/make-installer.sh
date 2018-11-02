@@ -22,8 +22,7 @@ usr_binaries=/usr/local/bin
 
 
 #### BUILD ASSETS ####
-
-cp ../../dist/build/elm/elm $pkg_binaries/elm
+cp ../../dist-newstyle/build/x86_64-osx/ghc-8.6.1/elm-0.19.0/x/elm/build/elm/elm $pkg_binaries/elm
 
 cp $(pwd)/preinstall $pkg_scripts
 cp $(pwd)/postinstall $pkg_scripts
