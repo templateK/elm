@@ -7,7 +7,6 @@
 
 
 #### SETUP ####
-
 set -e
 
 # Create directory structure for new pkgs
@@ -22,7 +21,7 @@ usr_binaries=/usr/local/bin
 
 
 #### BUILD ASSETS ####
-cp ../../dist-newstyle/build/x86_64-osx/ghc-8.6.1/elm-0.19.0/x/elm/build/elm/elm $pkg_binaries/elm
+cp $(find ../../dist-newstyle/ -name 'elm' -type f) $pkg_binaries/elm
 
 cp $(pwd)/preinstall $pkg_scripts
 cp $(pwd)/postinstall $pkg_scripts
